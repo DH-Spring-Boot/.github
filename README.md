@@ -21,6 +21,9 @@
   - Use db url jdbc:h2:mem:testdb
  
  ## Launch MySQL using Docker
+  - Open the docker desktop
+  - run this below command from cmd
+  - port to see my-sql: jdbc:mysql://localhost:3306/todos
 
 ```
 docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=todos-user --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 mysql:8-oracle
